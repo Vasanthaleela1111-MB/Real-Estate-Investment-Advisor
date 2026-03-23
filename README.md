@@ -77,16 +77,27 @@ RealEstate_Project/
 │
 ├── cleaned_data.csv
 ├── Feature_data.csv
+├── india_housing_prices.csv
 ├── classification.ipynb
 ├── regression.ipynb
+├── Data_clening.ipynb
+├── Real Estate.ipynb
 ├── classification.pkl
 ├── classification_scaler.pkl
 ├── model.pkl
-├── real.py (Streamlit App)
+├── real.py
 ├── README.md
 ```
 
----
+## 📁 Dataset and Model Files
+
+Some dataset and model files are large and cannot be uploaded directly to GitHub.
+You can download the CSV files and model files from the Google Drive link below:
+
+🔗 Google Drive Link:
+https://drive.google.com/drive/folders/1i69cV9woGf8ERlBgUSvkfmHQbBNfN2E3?usp=sharing
+
+After downloading, place the files in the project folder as shown in the project structure before running the Streamlit application.
 
 ## ▶️ How to Run the Project
 
