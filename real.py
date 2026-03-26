@@ -411,7 +411,7 @@ elif page == "Regression Prediction":
     city = st.selectbox("City", sorted(df["City"].unique()), key="reg_class_city")
     locality = st.selectbox("Locality", data["Locality"].unique(),key='locality')
 
-    facing = st.selectbox("Facing", sorted(df["Facing"].unique()))
+    facing = st.selectbox("Facing", sorted(df["Facing"].unique()),key='face')
     owner = st.selectbox("Owner Type", sorted(df["Owner_Type"].unique()))
 
     furnished_un = st.selectbox("Unfurnished", [0,1])
