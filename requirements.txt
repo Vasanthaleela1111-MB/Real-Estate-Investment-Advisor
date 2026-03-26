@@ -7,3 +7,5 @@ seaborn==0.13.2
 plotly==6.5.2
 joblib==1.5.3
 gdown
+xgboost
+category-encoders
