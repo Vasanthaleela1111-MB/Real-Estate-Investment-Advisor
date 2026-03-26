@@ -295,32 +295,32 @@ elif page == "Classification Prediction":
 
     st.title("🏠 Good Investment Prediction")
 
-    size = st.number_input("Size in SqFt")
+    size = st.number_input("Size in SqFt",key='sft')
     price = st.number_input("Price in Lakhs")
-    year = st.number_input("Year Built")
+    year = st.number_input("Year Built",key='built')
 
     floor = st.number_input("Floor Number")
     total_floors = st.number_input("Total Floors")
 
     schools = st.number_input("Nearby Schools")
-    hospitals = st.number_input("Nearby Hospitals")
+    hospitals = st.number_input("Nearby Hospitals",key='hos')
 
     parking = st.selectbox("Parking Space", data["Parking_Space"].unique())
-    facing = st.selectbox("Facing", sorted(df["Facing"].unique()))
+    facing = st.selectbox("Facing", sorted(df["Facing"].unique()),key='fa')
     security = st.selectbox("Security", data["Security"].unique())
 
     transport = st.selectbox(
         "Public Transport Accessibility",
-        ["High","Medium","Low"])
+        ["High","Medium","Low"],key='tpt')
     
 
     state = st.selectbox("State",sorted(df["State"].unique()))
-    city = st.selectbox("City",sorted(df["City"].unique()))
-    locality = st.selectbox("Locality", data["Locality"].unique())
+    city = st.selectbox("City",sorted(df["City"].unique()),key='cty')
+    locality = st.selectbox("Locality", data["Locality"].unique(),key='local')
 
     property_type = st.selectbox(
         "Property Type",
-        ["Apartment","Villa","Independent House"]
+        ["Apartment","Villa","Independent House"],key='type'
     )
 
     ready = st.selectbox(
@@ -329,7 +329,7 @@ elif page == "Classification Prediction":
     )
 
     bhk = st.number_input("BHK")
-    sqft = st.number_input("Price per SqFt")
+    sqft = st.number_input("Price per SqFt",key='qf')
 
     if st.button("Predict"):
 
