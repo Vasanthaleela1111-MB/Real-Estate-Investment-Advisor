@@ -104,7 +104,7 @@ elif page == 'EDA':
 
   elif selected == "3. How does the price per sq ft vary by property type?":
     fig,ax=plt.subplots()
-    avg=df.groupby('Property_Type')['Price_per_SqFt'].mean()
+    avg=india.groupby('Property_Type')['Price_per_SqFt'].mean()
     ax.bar(avg.index,avg.values)
     ax.set_xlabel("Property Type")
     ax.set_ylabel("Average Price per SqFt")
