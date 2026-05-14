@@ -138,5 +138,5 @@ This project helps users make better real estate investment decisions by predict
 
 ## 👩‍💻 Author
 
-Vasantha Leela MB
+Vasantha Leela M
 This project was developed as part of my Machine Learning and Web Application development work, focusing on real estate investment prediction using classification and regression models with Streamlit deployment.
