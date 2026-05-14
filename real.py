@@ -473,7 +473,7 @@ elif page == "Regression Prediction":
 elif page == "Creator Info":
     st.title("👩‍💻 Creator of this Project")
     st.write("""
-    **Developed by:** Vasantha leela 
+    **Developed by:** Vasantha leela M 
              
     **Skills:** Python, SQL, Data Analysis,Streamlit, Pandas   
     """)
